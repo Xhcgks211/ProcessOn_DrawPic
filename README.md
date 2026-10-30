@@ -97,6 +97,29 @@ export PROCESSON_COOKIE="po-last-platform=personal"
 
 ## 使用方式
 
+### 使用技巧
+
+**1. 第一次绘图时，一定要明确想要的图像风格。**
+
+在首次请求中说明布局、配色和图形风格，也可以直接使用本仓库内置的 [Demo 图](docs/images/processon-skill-demo.png) 作为风格参考，并提供 [示例 JSON](examples/processon-skill-demo.json) 供 AI 参考图形结构。
+
+```text
+使用 $processon-draw，参考仓库内置 Demo 图的风格绘制我的算法流程图：
+采用横向分区布局、浅色配色、统一字号和简洁连线。
+参考 docs/images/processon-skill-demo.png 的视觉效果，
+以及 examples/processon-skill-demo.json 的图形结构，内容替换为以下算法步骤：……
+```
+
+**2. 当算法公式或文字描述过多时，要求减少文字和公式，用抽象图形代替。**
+
+可以让 AI 用矩阵、散点、模块、箭头等图形表达数据与操作，只保留必要的短标签和关键公式，让流程与模块关系更容易看清。
+
+```text
+这张图的文字描述和算法公式太多，请进一步简化：
+减少长段文字与非必要公式，用矩阵、散点、模块和箭头等抽象图形表达，
+只保留必要的短标签与关键公式，并保持算法步骤和数据流关系准确。
+```
+
 ### 在 Codex 中用自然语言操作
 
 安装技能并配置凭证后，指定目标文件或描述新图即可。可以显式使用 `$processon-draw` 调用：
