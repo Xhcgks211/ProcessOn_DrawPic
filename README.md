@@ -101,13 +101,12 @@ export PROCESSON_COOKIE="po-last-platform=personal"
 
 **1. 第一次绘图时，一定要明确想要的图像风格。**
 
-在首次请求中说明布局、配色和图形风格，也可以直接使用本仓库内置的 [Demo 图](docs/images/processon-skill-demo.png) 作为风格参考，并提供 [示例 JSON](examples/processon-skill-demo.json) 供 AI 参考图形结构。
+在首次请求中说明布局、配色和图形风格，也可以直接使用本仓库内置的 [Demo 图](docs/images/processon-skill-demo.png) 作为风格参考，供 AI 参考图形结构。
 
 ```text
 使用 $processon-draw，参考仓库内置 Demo 图的风格绘制我的算法流程图：
 采用横向分区布局、浅色配色、统一字号和简洁连线。
-参考 docs/images/processon-skill-demo.png 的视觉效果，
-以及 examples/processon-skill-demo.json 的图形结构，内容替换为以下算法步骤：……
+参考 docs/images/processon-skill-demo.png 的视觉效果，内容替换为以下算法步骤：……
 ```
 
 **2. 当算法公式或文字描述过多时，要求减少文字和公式，用抽象图形代替。**
