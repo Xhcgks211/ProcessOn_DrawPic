@@ -1,0 +1,3 @@
+interface:
+  display_name: "ProcessOn 画图"
+  short_description: "用 API 直接在 ProcessOn 上画流程图、思维导图"
